@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thời Khoá Biểu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        
+        .tkb {
+            display: grid;
+            grid-template-columns: 100px repeat(5, 1fr);
+            gap: 10px;
+            background: #ecf0f1;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        .tkb>div {
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tkb .header {
+            background: #3498db;
+            color: rgb(136, 107, 107);
+            font-weight: bold;
+        }
+        
+        .tkb .time {
+            background: #460a0a;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>📅 Thời Khoá Biểu</h1>
+
+    <div class="tkb">
+        <!-- Dòng tiêu đề -->
+        <div class="header">Thứ / Giờ</div>
+        <div class="header">Thứ 2</div>
+        <div class="header">Thứ 3</div>
+        <div class="header">Thứ 4</div>
+        <div class="header">Thứ 5</div>
+        <div class="header">Thứ 6</div>
+
+        <!-- Dòng 1 -->
+        <div class="time">7:00 - 9:00</div>
+        <div>Toán</div>
+        <div>Văn</div>
+        <div>Lý</div>
+        <div>Hóa</div>
+        <div>Sinh</div>
+
+        <!-- Dòng 2 -->
+        <div class="time">9:15 - 11:15</div>
+        <div>Văn</div>
+        <div>Toán</div>
+        <div>Hóa</div>
+        <div>Sử</div>
+        <div>Địa</div>
+
+        <!-- Dòng 3 -->
+        <div class="time">13:30 - 16:30</div>
+        <div>Lịch sử</div>
+        <div>Thể dục</div>
+        <div>GDCD</div>
+        <div>Tin học</div>
+        <div>Vẽ</div>
+    </div>
+
+</body>
+
+</html>
