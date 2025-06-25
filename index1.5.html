@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Điều Hướng</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #cec3a4;
+        }
+        
+        nav {
+            background-color: #649cd4;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-container li {
+            position: relative;
+        }
+        
+        .nav-container a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px 12px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        /* Hiệu ứng gạch dưới khi hover */
+        
+        .nav-container a::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background-color: #1abc9c;
+            transition: width 0.4s ease;
+        }
+        
+        .nav-container a:hover {
+            color: #1abc9c;
+        }
+        
+        .nav-container a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="nav-container">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
