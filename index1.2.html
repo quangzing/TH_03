@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Danh sách môn học yêu thích</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: hsl(182, 44%, 63%);
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            /* Tự động chia 2-3 cột */
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>📚 Danh sách môn học yêu thích</h1>
+
+    <div class="grid-container">
+        <div class="card">
+            <div class="card-title">Toán học</div>
+            <p>Hiểu thêm về số thực, số hữu tỷ</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Lập trình Web</div>
+            <p>Tạo website hiện đại với HTML, CSS, JavaScript.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Thiết kế đồ họa</div>
+            <p>Thiết kế banner, poster logo thương hiệu.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Kỹ năng giao tiếp</div>
+            <p>Hiểu được tâm lý người khác, xây dựng lòng tin và sự đồng cảm.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Tiếng Anh</div>
+            <p>Nâng cao trình độ ngoại ngữ để giao tiếp với người nước ngoài.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
