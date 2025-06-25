@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân</title>
+    <style>
+        /* Reset CSS */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 20px;
+        }
+        
+        .profile {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+            max-width: 800px;
+            background-color: #61dfa4;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .avatar {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #ccc;
+        }
+        
+        .info {
+            flex: 1;
+        }
+        
+        .info h1 {
+            font-size: 28px;
+            color: #2250b3;
+            margin-bottom: 10px;
+        }
+        
+        .info p {
+            margin-bottom: 8px;
+            color: #c03939;
+        }
+        /* Responsive: Xếp dọc ở màn hình nhỏ */
+        
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            .info h1 {
+                font-size: 24px;
+            }
+            .avatar {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-1/491322412_2039324636566257_9105971210944496305_n.jpg?stp=cp6_dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeGpLRY1aEsyKvwndvjC_Wv_r05UlNuscoCvTlSU26xygGTMu0WAWDzeQuOXOLpzpg942wCCCfdOmaewIbMY_l9I&_nc_ohc=BigXbyEnH1AQ7kNvwFCEkJY&_nc_oc=Adl_2-2aUsnMeRDxXtALZLwJxFRw1KKJhWkQydwgvkSk6RCjjOPht8jybOZTh-nOO9Q&_nc_zt=24&_nc_ht=scontent.fsgn5-12.fna&_nc_gid=LQEEJzJXMD8ipNZc1n4CSg&oh=00_AfPdOCwNkTFlOkE6oVF5brYkcTJt3SToQIwhHpGg-SNhVQ&oe=68617524"
+                alt="Ảnh đại diện" class="avatar" />
+            <div class="info">
+                <h1>Lê Quang Vinh</h1>
+                <p>Sinh viên ngành Thương mại điện tử.</p>
+                <p>Yêu thích lập trình web, thiết kế đồ họa.</p>
+                <p>Ngày sinh: 30/11/2005.</p>
+                <p>Quê quán: Vĩnh Long.</p>
+                <p>Email: qvl.vinh@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
